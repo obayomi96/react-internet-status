@@ -2,7 +2,7 @@
 -A small react Component that indicates lost internet connectivity
 
 ### Installation
-`npm install react-internet-status` or `yarn add react-internet-status`
+`npm install react-internet-status`
 
 ### Usage
 `import { InternetStatus } from 'react-internet-status'`
