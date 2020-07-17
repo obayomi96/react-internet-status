@@ -2,10 +2,10 @@
 -A small react Component that indicates lost internet connectivity
 
 ### Installation
-- run `npm install react-internet-status` or `yarn add react-internet-status`
+`npm install react-internet-status` or `yarn add react-internet-status`
 
 ### Usage
-`import { InternetStatus } from 'react-internet-status';`
+`import { InternetStatus } from 'react-internet-status'`
 
 ```
 function App(){
@@ -15,6 +15,8 @@ function App(){
     </div>
   );
 }
+
+export default App
 ```
 - Render InternetStatus component in any parent component preferably in the App.js Component.
 
