@@ -1,5 +1,5 @@
 # react-internet-status
--A small react Component that indicates lost internet connectivity
+- A small React omponent that indicates lost internet connectivity
 
 ### Installation
 - run `npm install react-internet-status` or `yarn add react-internet-status`
@@ -16,7 +16,7 @@ function App(){
   );
 }
 ```
-- Render InternetStatus component in any parent component preferably in the App.js Component.
+- Render InternetStatus component, wrapped in any component, e.g the App Component. Then pass it's props as needed.
 
 ## Props
 

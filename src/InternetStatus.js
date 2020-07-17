@@ -1,10 +1,16 @@
-import React from 'react';
+import React, {useState} from 'react';
 import PropTypes from 'prop-types';
 
-const isOnline = window.navigator.onLine;
-console.log('Browser is online ==>', isOnline);
-
 const InternetStatus = ({message, bgColor, txColor, wd, ht}) => {
+  const [isOnline, setIsOnline] = useState(true);
+
+  window.addEventListener('offline', function(){
+    setIsOnline(false);
+  });
+
+  window.addEventListener('online', function(){
+    setIsOnline(true);
+  });
 
   return (
     <div style={{

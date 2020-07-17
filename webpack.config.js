@@ -2,7 +2,6 @@ const path = require('path');
 
 const paths = {
   DIST: path.resolve(__dirname, "lib"),
-  SRC: path.resolve(__dirname, "docs"),
   REACT: path.resolve(__dirname,  "./node_modules/react"),
   REACTDOM: path.resolve(__dirname, "node_modules/react-dom")
 };
@@ -22,13 +21,6 @@ module.exports = {
         test: /\.js?$/,
         exclude: /(node_modules)/,
         use: 'babel-loader',
-      },
-      {
-        test: /\.css$/,
-        use: [
-          'style-loader',
-          'css-loader'
-        ]
       }
     ],
   },
@@ -53,11 +45,4 @@ module.exports = {
       root: "ReactDOM"
     }
   },
-
-  /*server */
-  devServer: {
-    contentBase: paths.SRC,
-    publicPath: "/",
-    historyApiFallback: true
-  }
 };
