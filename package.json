@@ -1,5 +1,5 @@
 {
-  "name": "react-detect-internet",
+  "name": "react-internet-status",
   "version": "1.0.0",
   "description": "A small react Component that indicates lost internet connectivity",
   "main": "./lib/index.js",
@@ -10,13 +10,14 @@
   "keywords": [
     "react",
     "internet",
+    "online status",
     "connectivity",
     "connection",
     "notifier"
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/obayomi96/react-detect-internet.git"
+    "url": "git+https://github.com/obayomi96/react-internet-status.git"
   },
   "scripts": {
     "build": "webpack"

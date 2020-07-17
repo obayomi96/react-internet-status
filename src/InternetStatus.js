@@ -1,14 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const online = window.navigator.onLine;
-console.log('Browser is online ==>', online);
+const isOnline = window.navigator.onLine;
+console.log('Browser is online ==>', isOnline);
 
-const IsOnline = ({message, bgColor, txColor, wd, ht}) => {
+const InternetStatus = ({message, bgColor, txColor, wd, ht}) => {
 
   return (
     <div style={{
-      display: `${online ? 'none' : 'block'}`,
+      display: `${isOnline ? 'none' : 'block'}`,
       textAlign: 'center',
       position: 'fixed',
       justifyContent: 'center',
@@ -25,7 +25,7 @@ const IsOnline = ({message, bgColor, txColor, wd, ht}) => {
   )
 };
 
-IsOnline.defaultProps = {
+InternetStatus.defaultProps = {
   message: 'Your device is not connected to the internet!',
   bgColor: 'red',
   txColor: 'white',
@@ -33,7 +33,7 @@ IsOnline.defaultProps = {
   ht: '50px',
 };
 
-IsOnline.propTypes = {
+InternetStatus.propTypes = {
   message: PropTypes.string,
   bgColor: PropTypes.string,
   txColor: PropTypes.string,
@@ -42,4 +42,4 @@ IsOnline.propTypes = {
 };
 
 
-export default IsOnline;
+export default InternetStatus;

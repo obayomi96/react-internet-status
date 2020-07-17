@@ -1,1 +1,1 @@
-export { default as IsOnline } from './IsOnline';
+export { default as InternetStatus } from './InternetStatus';
