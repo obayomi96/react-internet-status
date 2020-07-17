@@ -18,6 +18,8 @@ function App(){
 
 export default App
 ```
+![InternetStatus png](https://user-images.githubusercontent.com/43539944/87772276-5a4ac600-c7d6-11ea-91d9-c93838b417d8.png)
+
 - Render InternetStatus component, wrapped in any component, e.g the App Component. Then pass it's props as needed.
 
 ## Props
