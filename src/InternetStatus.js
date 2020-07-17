@@ -21,22 +21,14 @@ const InternetStatus = ({message, bgColor, txColor, wd, ht}) => {
       alignItems: 'center',
       top: '0',
       zIndex: '100',
-      background: bgColor,
-      color: txColor,
-      width: wd,
-      height: ht,
+      background: bgColor || 'red',
+      color: txColor || 'white',
+      width: wd || '100%',
+      height: ht || '50px',
     }}>
-      <p>{message}</p>
+      <p>{message || 'Your device is not connected to the internet!'}</p>
     </div>
   )
-};
-
-InternetStatus.defaultProps = {
-  message: 'Your device is not connected to the internet!',
-  bgColor: 'red',
-  txColor: 'white',
-  wd: '100%',
-  ht: '50px',
 };
 
 InternetStatus.propTypes = {
@@ -46,6 +38,5 @@ InternetStatus.propTypes = {
   wd: PropTypes.string,
   ht: PropTypes.string,
 };
-
 
 export default InternetStatus;
