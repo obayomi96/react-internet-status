@@ -18,18 +18,24 @@ function App(){
 
 export default App
 ```
+![InternetStatus png](https://user-images.githubusercontent.com/43539944/88469081-ab774b80-cea1-11ea-8246-fa983f93ddde.png)
+
 - Render InternetStatus component, wrapped in any component, e.g the App Component as shown above. Then pass in props as need be.
 
 ## Props
 
-### PropTypes
 <ul>
-<li> message: PropTypes.string </li>
-<li> bgColor: PropTypes.string </li>
-<li> txColor: PropTypes.string </li>
-<li> wd: PropTypes.string </li>
-<li> ht: PropTypes.string </li>
+<li> message: string - Message to user when internet is lost </li>
+<li> background: string - Container background color </li>
+<li> textColor: string - Text color for message string </li>
+<li> width: string - Container width </li>
+<li> height: string - Container height </li>
 </ul>
+
+### Todo
+- Modal component
+- New page component
+- Loaders
 
 ## Author
 - Martins Obayomi
