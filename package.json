@@ -1,6 +1,6 @@
 {
   "name": "react-internet-status",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "A small React component that indicates lost internet connectivity",
   "main": "./lib/index.js",
   "peerDependencies": {
@@ -20,6 +20,7 @@
     "url": "git+https://github.com/obayomi96/react-internet-status.git"
   },
   "scripts": {
+    "start": "serve -s lib/",
     "build": "webpack"
   },
   "author": "martins obayomi",
@@ -31,9 +32,10 @@
     "@babel/preset-react": "^7.10.4",
     "babel-loader": "^8.1.0",
     "path": "^0.12.7",
+    "prop-types": "^15.7.2",
+    "serve": "^11.3.2",
     "webpack": "^4.43.0",
-    "webpack-cli": "^3.3.12",
-    "prop-types": "^15.7.2"
+    "webpack-cli": "^3.3.12"
   },
   "dependencies": {}
 }

@@ -11,7 +11,7 @@
 function App(){
   return (
     <div>
-      <InternetStatus />
+      <InternetStatus background='green' />
     </div>
   );
 }
@@ -31,11 +31,6 @@ export default App
 <li> width: string - Container width </li>
 <li> height: string - Container height </li>
 </ul>
-
-### Todo
-- Modal component
-- New page component
-- Loaders
 
 ## Author
 - Martins Obayomi

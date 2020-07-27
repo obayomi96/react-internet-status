@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import PropTypes from 'prop-types';
 
 const InternetStatus = ({message, background, textColor, width, height}) => {
   const [isOnline, setIsOnline] = useState(true);
@@ -28,6 +29,14 @@ const InternetStatus = ({message, background, textColor, width, height}) => {
       <p>{message || 'Your device is not connected to the internet!'}</p>
     </div>
   )
+};
+
+InternetStatus.propTypes = {
+  message: PropTypes.string,
+  background: PropTypes.string,
+  textColor: PropTypes.string,
+  width: PropTypes.string,
+  height: PropTypes.string,
 };
 
 export default InternetStatus;
