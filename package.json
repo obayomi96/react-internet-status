@@ -26,6 +26,11 @@
     "lint:fix": "eslint --fix --ext .js .",
     "format": "prettier --write src/*.(js)"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint:fix && npm run lint"
+    }
+  },
   "author": "martins obayomi",
   "license": "ISC",
   "devDependencies": {

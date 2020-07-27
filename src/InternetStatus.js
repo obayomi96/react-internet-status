@@ -8,7 +8,7 @@ const InternetStatus = ({ message, background, textColor, width, height }) => {
     setIsOnline(false);
   });
 
-  window.addEventListener('online', function () {
+  window.addEventListener("online", function () {
     setIsOnline(true);
   });
 
