@@ -1,9 +1,9 @@
 const path = require('path');
 
 const paths = {
-  DIST: path.resolve(__dirname, "lib"),
-  REACT: path.resolve(__dirname,  "./node_modules/react"),
-  REACTDOM: path.resolve(__dirname, "node_modules/react-dom")
+  DIST: path.resolve(__dirname, 'lib'),
+  REACT: path.resolve(__dirname, './node_modules/react'),
+  REACTDOM: path.resolve(__dirname, 'node_modules/react-dom'),
 };
 
 module.exports = {
@@ -21,28 +21,28 @@ module.exports = {
         test: /\.js?$/,
         exclude: /(node_modules)/,
         use: 'babel-loader',
-      }
+      },
     ],
   },
   resolve: {
     alias: {
-      'react': paths.REACT,
+      react: paths.REACT,
       'react-dom': paths.REACTDOM,
-    }
+    },
   },
   externals: {
-    // Don't bundle react or react-dom      
+    // Don't bundle react or react-dom
     react: {
-      commonjs: "react",
-      commonjs2: "react",
-      amd: "React",
-      root: "React"
+      commonjs: 'react',
+      commonjs2: 'react',
+      amd: 'React',
+      root: 'React',
     },
-    "react-dom": {
-      commonjs: "react-dom",
-      commonjs2: "react-dom",
-      amd: "ReactDOM",
-      root: "ReactDOM"
-    }
+    'react-dom': {
+      commonjs: 'react-dom',
+      commonjs2: 'react-dom',
+      amd: 'ReactDOM',
+      root: 'ReactDOM',
+    },
   },
 };
