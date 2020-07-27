@@ -1,5 +1,9 @@
 # react-internet-status
-- A small React omponent that indicates lost internet connectivity
+
+[![Package Quality](https://npm.packagequality.com/shield/react-internet-status.svg)](https://packagequality.com/#?package=react-internet-status)
+[![downloads](https://img.shields.io/npm/dm/react-internet-status.svg)](https://www.npmjs.com/package/react-internet-status)
+
+- A small React component that indicates lost internet connectivity
 
 ### Installation
 `npm install react-internet-status`
