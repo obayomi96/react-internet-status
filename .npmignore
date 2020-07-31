@@ -11,3 +11,4 @@ __test__
 __mock__
 test-utils.js
 coverage
+.circleci
