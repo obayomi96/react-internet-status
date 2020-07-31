@@ -1,5 +1,5 @@
 import React from 'react';
-import { render, getByTestId } from '@testing-library/react';
+import { render } from '@testing-library/react';
 import { act } from '@testing-library/react-hooks';
 import '@testing-library/jest-dom';
 import InternetStatus from '../src/InternetStatus';
