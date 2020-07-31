@@ -4,6 +4,4 @@
 
 #### Any background context OR Extra detail?
 
-#### What are the relevant PT stories?
-
-#### Screenshot
+#### Screenshot (if relevant)

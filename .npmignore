@@ -1,4 +1,13 @@
 src
 webpack.config.js
 .babelrc
-.eslintrc.js
+.eslintrc.json
+.prettierrc
+.github
+node_modules
+LICENSE
+.eslintignore
+__test__
+__mock__
+test-utils.js
+coverage

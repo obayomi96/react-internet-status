@@ -1,5 +1,6 @@
 # react-internet-status
 
+[![Codecov Coverage](https://img.shields.io/codecov/c/github/obayomi96/react-internet-status/&lt;master>.svg?style=flat-square)](https://codecov.io/gh/obayomi96/react-internet-status/)
 [![Package Quality](https://npm.packagequality.com/shield/react-internet-status.svg)](https://packagequality.com/#?package=react-internet-status)
 [![downloads](https://img.shields.io/npm/dm/react-internet-status.svg)](https://www.npmjs.com/package/react-internet-status)
 

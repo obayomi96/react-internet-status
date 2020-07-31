@@ -1,6 +1,6 @@
 {
   "name": "react-internet-status",
-  "version": "1.0.8",
+  "version": "1.2.0",
   "description": "A small React component that indicates lost internet connectivity",
   "main": "./lib/index.js",
   "peerDependencies": {
@@ -20,16 +20,24 @@
     "url": "git+https://github.com/obayomi96/react-internet-status.git"
   },
   "scripts": {
-    "start": "serve -s lib/",
+    "start": "serve -s lib/index.js",
     "build": "webpack",
+    "test": "jest && codecov",
     "lint": "eslint src/**/*.js",
     "lint:fix": "eslint --fix --ext .js .",
     "format": "prettier --write src/*.(js)"
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run lint:fix && npm run lint"
+      "pre-commit": "lint-staged",
+      "pre-push": "npm test"
     }
+  },
+  "lint-staged": {
+    "{src,__tests__}/**/*.{js,jsx,json}": [
+      "npm run lint:fix",
+      "git add ."
+    ]
   },
   "author": "martins obayomi",
   "license": "ISC",
@@ -38,7 +46,14 @@
     "@babel/core": "^7.10.5",
     "@babel/preset-env": "^7.10.4",
     "@babel/preset-react": "^7.10.4",
+    "@testing-library/jest-dom": "^5.11.2",
+    "@testing-library/react": "^10.4.7",
+    "@testing-library/react-hooks": "^3.4.1",
+    "babel-jest": "^26.1.0",
     "babel-loader": "^8.1.0",
+    "check-prop-types": "^1.1.2",
+    "codecov": "^3.7.2",
+    "enzyme": "^3.11.0",
     "eslint": "^7.5.0",
     "eslint-config-airbnb": "^18.2.0",
     "eslint-config-prettier": "^6.11.0",
@@ -47,10 +62,16 @@
     "eslint-plugin-prettier": "^3.1.4",
     "eslint-plugin-react": "^7.20.4",
     "eslint-plugin-react-hooks": "^4.0.8",
+    "jest": "^26.1.0",
+    "lint-staged": "^10.2.11",
     "path": "^0.12.7",
     "prettier": "^2.0.5",
     "prop-types": "^15.7.2",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-test-renderer": "^16.13.1",
     "serve": "^11.3.2",
+    "sinon": "^9.0.2",
     "webpack": "^4.43.0",
     "webpack-cli": "^3.3.12"
   },
