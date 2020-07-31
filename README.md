@@ -1,5 +1,6 @@
 # react-internet-status
 
+[![CircleCI](https://circleci.com/gh/obayomi96/react-internet-status.svg?style=svg)](https://circleci.com/gh/obayomi96/react-internet-status)
 [![codecov](https://codecov.io/gh/obayomi96/react-internet-status/branch/master/graph/badge.svg)](https://codecov.io/gh/obayomi96/react-internet-status)
 [![Package Quality](https://npm.packagequality.com/shield/react-internet-status.svg)](https://packagequality.com/#?package=react-internet-status)
 [![downloads](https://img.shields.io/npm/dm/react-internet-status.svg)](https://www.npmjs.com/package/react-internet-status)
