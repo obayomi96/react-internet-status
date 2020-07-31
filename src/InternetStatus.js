@@ -1,19 +1,22 @@
-import React, { useState } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 
 const InternetStatus = ({ message, background, textColor, width, height }) => {
-  const [isOnline, setIsOnline] = useState(true);
+
+  let isOnline = false;
 
   window.addEventListener('offline', function () {
-    setIsOnline(false);
+    isOnline = false;
   });
 
   window.addEventListener("online", function () {
-    setIsOnline(true);
+    isOnline = true;
   });
 
   return (
     <div
+      className='nav'
+      data-testid='nav'
       style={{
         display: `${isOnline ? 'none' : 'block'}`,
         textAlign: 'center',
