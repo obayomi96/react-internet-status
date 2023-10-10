@@ -28,7 +28,7 @@ const InternetStatus = ({ message, background, textColor, width, height }) => {
         backgroundColor: background || 'red',
         color: textColor || 'white',
         width: width || '100%',
-        height: height || '50px',
+        height: height || '55px',
       }}
     >
       <p>{message || 'Your device is not connected to the internet!'}</p>
